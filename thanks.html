@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home</title>
+    <title>Thanks!</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+
     <script async="" src="//www.google-analytics.com/analytics.js"></script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -29,9 +30,8 @@
     </script>
 </head>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body onload="rand()" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -46,8 +46,10 @@
                 <a class="navbar-brand page-scroll" href="index.html"><img class="img-responsive" src="img/sur-logo-white.png" ></a>
             </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
@@ -63,53 +65,50 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
-        </div> 
+        </div>
         <!-- /.container-fluid -->
-    </nav> 
+    </nav>
 
-    <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="container padding">
-            <div class="row main">
-                <div class="col-lg-6 col-md-6 col-md-offset-0">
-                    <h1 class="value-prop">Need Help Filing your Returns?</h1>
-                    <p class="text-space">Compliance, government reporting and investor reporting are important, but time-consuming. Our robots connect you with helpful experts who run around for you.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-md-offset-0">
-                    <a class="btn btn-default2" id="startnow" href="welcome.html">Start Filing Now</a>
+
+    <!-- Section -->
+    <section id="intent" class="intent-section">
+        <div class="container">
+            <div class="row center-block">
+                <div class="thanks col-lg-8 col-md-8 col-md-offset-2">
+                    <h2 class="thankyou"><strong>Thanks for choosing StartupRobot!</strong></h2><br>
+                    <h4>You’ll hear from one of our robots within 24 hours.</h4>
+                    <h4>Meanwhile, make sure your driver’s licence is valid for at least the next two weeks, <strong>or</strong> have ready <a href="proof.html">alternate proof of identity.</a></h4>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row footer-space">
+        <div class="footer">
+            <div class="container">
+                <div class="row footer-space">
                     <div class="col-lg-12">
                         <h5 class="footer-heading">Connect with Us</h5>
                     </div>
                 </div>
-            <div class="row footer-space">
-                <div class="col-lg-12">
-                    <a href="https://www.facebook.com/startuprobot"><img src="img/fb.png"></a>
-                    <a href="https://twitter.com/startuprobot"><img src="img/tweet.png"></a>
-                    <a href="https://instagram.com/startuprobot/"><img src="img/insta.png"></a>
-                    <a href="https://plus.google.com/+Startuprobot/videos"><img src="img/googleplus.png"></a>
-                    <a href="https://www.youtube.com/c/Startuprobot"><img src="img/utube.png"></a>
-                    <p class="footer-text call">...or <a href="contact.html">call</a> or <a href="contact.html">snail mail</a></p>
+                <div class="row footer-space">
+                    <div class="col-lg-12">
+                        <a href="https://www.facebook.com/startuprobot"><img src="img/fb.png"></a>
+                        <a href="https://twitter.com/startuprobot"><img src="img/tweet.png"></a>
+                        <a href="https://instagram.com/startuprobot/"><img src="img/insta.png"></a>
+                        <a href="https://plus.google.com/+Startuprobot/videos"><img src="img/googleplus.png"></a>
+                        <a href="https://www.youtube.com/c/Startuprobot"><img src="img/utube.png"></a>
+                        <p class="footer-text call">...or <a href="contact.html">call</a> or <a href="contact.html">snail mail</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="row footer-space">
-                <div class="col-lg-12">
-                    <p class="footer-text">Copyright &copy; 2015 StartupRobot.</p>
-                    <p class="footer-text">StartUpRobot is not a replacement for a Lawyer or an Accountant. Please see the appropriate professional help for specific needs. Use of startuprobot.com is subject to our <a href="privacy_policy.html">Privacy Policy</a> and <a href="terms_and_conditions.html">Terms and Conditions.</a></p>
+                <div class="row footer-space">
+                    <div class="col-lg-12">
+                        <p class="footer-text">Copyright &copy; 2015 StartupRobot.</p>
+                        <p class="footer-text">StartUpRobot is not a replacement for a Lawyer or an Accountant. Please see the appropriate professional help for specific needs. Use of startuprobot.com is subject to our <a href="privacy_policy.html">Privacy Policy</a> and <a href="terms_and_conditions.html">Terms and Conditions.</a></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -123,13 +122,6 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
 
-    <script>
-        $('.selectpicker').selectpicker(); 
-    </script>
-
-    <script>
-
-    </script>
 </body>
 
 </html>
